@@ -4,12 +4,15 @@ $Location="North Europe"
 $ResourceGroupName="web-demorg"
 $AppServicePlanName="leaningappwebdemorg7000"
 
-$AppName="leaningappwebdemorg"
+New-AzAppServicePlan -ResourceGroupName $ResourceGroupName -Name $AppServicePlanName `
+-Location $Location -Tier Basic
 
-New-AzWebApp -ResourceGroupName $ResourceGroupName -Location $Location -Name $AppName `
--AppServicePlan $AppServicePlanName
+$AppName="leaningappwebdemo16Aug24"
 
-$gitrepo="https://github.com/Tiwanand2000/AZ-204Learning.git"
+# New-AzWebApp -ResourceGroupName $ResourceGroupName -Location $Location -Name $AppName `
+# -AppServicePlan $AppServicePlanName
+
+$gitrepo="https://github.com/Tiwanand2000/testing"
 
 $PropertiesObject = @{
     repoUrl = $gitrepo;
