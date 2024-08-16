@@ -18,7 +18,7 @@ $gitrepo="https://github.com/Tiwanand2000/testing"
 
 $PropertiesObject = @{
     repoUrl = $gitrepo;
-    branch ="testingv1";
+    branch ="main";
     isManualIntegration = "false";
 }
 
