@@ -7,8 +7,6 @@ $AppName="leaningappwebdemov3"
 Set-AzAppServicePlan -ResourceGroupName $ResourceGroupName -Name $AppServicePlanName `
 -Tier Standard
 
-$AppName="leaningappwebdemov2"
-
 New-AzWebApp -ResourceGroupName $ResourceGroupName -Location $Location -Name $AppName `
 -AppServicePlan $AppServicePlanName 
 
