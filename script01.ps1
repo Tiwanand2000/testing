@@ -4,13 +4,13 @@ $Location="North Europe"
 $ResourceGroupName="web-demorg"
 $AppServicePlanName="leaningappwebdemorg7001"
 
-New-AzAppServicePlan -ResourceGroupName $ResourceGroupName -Name $AppServicePlanName `
--Location $Location -Tier Free -Linux
+# New-AzAppServicePlan -ResourceGroupName $ResourceGroupName -Name $AppServicePlanName `
+# -Location $Location -Tier Free
 
-$AppName="leaningappwebdemo16Aug24v1"
+$AppName="leaningappwebdemov2"
 
-New-AzWebApp -ResourceGroupName $ResourceGroupName -Location $Location -Name $AppName `
--AppServicePlan $AppServicePlanName 
+# New-AzWebApp -ResourceGroupName $ResourceGroupName -Location $Location -Name $AppName `
+# -AppServicePlan $AppServicePlanName 
 
 $gitrepo="https://github.com/Tiwanand2000/testing"
 
